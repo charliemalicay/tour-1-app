@@ -1,0 +1,99 @@
+
+div.tour-item {
+    h3 {
+        font-size: 18pt;
+
+        a, a:visited, a:active {
+            text-decoration: none;
+            font-weight: normal;
+            color: #111;
+        }
+    }
+
+    div.MuiAvatar-circular {
+        background-color: #f16664;
+    }
+
+    div.MuiCardHeader-content {
+        span.MuiCardHeader-title {
+            color: #111;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        span.MuiCardHeader-subheader {
+            color: #111;
+            font-weight: 500;
+            font-size: 11px;
+            margin-left: 10px;
+        }
+    }
+
+    div.MuiCardContent-root {
+        span.tour-rating-handler {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            p {
+                color: #111;
+                font-size: 14px;
+                margin-right: 10px;
+            }
+
+            span.tour-rating {
+                &.Item-rating__easy, &.Item-rating__medium, &.Item-rating__hard {
+                    svg:nth-child(1) {
+                        color: #007d8c;
+                    }
+                }
+
+                &.Item-rating__medium, &.Item-rating__hard {
+                    svg:nth-child(2) {
+                        color: #007d8c;
+                    }
+                }
+
+                &.Item-rating__hard {
+                    svg:nth-child(3) {
+                        color: #007d8c;
+                    }
+                }
+
+                svg {
+                    color: #aaa;
+                    margin-right: 5px;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        p {
+            color: #111;
+            font-size: 12px;
+        }
+    }
+
+    div.MuiCardActions-root {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            color: #111;
+            font-size: 13px;
+            margin-top: 3px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #111;
+            margin-bottom: 5px;
+            border-bottom: 2px transparent solid;
+            transition: 500ms;
+
+            &:hover {
+                border-bottom: 2px #f16664 solid;
+            }
+        }
+    }
+}

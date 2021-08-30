@@ -1,0 +1,23 @@
+div.tour-pagination {
+  height: 50px;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-color: #D5D5D5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.tour-pagination button svg {
+  font-size: 65px;
+  color: #111111;
+}
+div.tour-pagination button:disabled svg {
+  opacity: 50%;
+}
+div.tour-pagination p {
+  color: #111111;
+  font-size: 13px;
+}
+/*# sourceMappingURL=Pagination.css.map */

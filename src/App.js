@@ -7,6 +7,11 @@ import { Explore } from '@material-ui/icons';
 import { AppContext } from './AppContext';
 import AppSidebar from './AppSidebar';
 
+import CartLink from './components/CartLink';
+import Checkout from './pages/Checkout';
+import Details from './pages/Details';
+import List from './pages/List';
+
 import './App.css';
 
 
@@ -97,7 +102,7 @@ const App = () => {
                     <Grid item xs={10} className="tour-other-options">
                         <button>Advertise your tour</button>
                         <button>Help</button>
-                        {/*<CartLink booking={booking} />*/}
+                        <CartLink booking={booking} />
                     </Grid>
                     <Grid item xs={2}>
                         <AppSidebar />
@@ -108,9 +113,9 @@ const App = () => {
                             toggleWishlist, updateField,
                             setOrderItem, clearOrderItem, placeOrder
                         }}>
-                            {/*<Route path="/" exact component={List} />*/}
-                            {/*<Route path="/details/:id" component={Details} />*/}
-                            {/*<Route path="/checkout" component={Checkout} />*/}
+                            <Route path="/" exact component={List} />
+                            <Route path="/details/:id" component={Details} />
+                            <Route path="/checkout" component={Checkout} />
                         </AppContext.Provider>
                     </Grid>
                 </Grid>

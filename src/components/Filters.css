@@ -1,0 +1,90 @@
+header.tour-filters {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  background-color: transparent;
+  height: 60px;
+}
+header.tour-filters p {
+  line-height: 60px;
+}
+header.tour-filters p:first-child {
+  font-size: 15px;
+  margin-right: 40px;
+  color: #111;
+}
+header.tour-filters div.filter-price,
+header.tour-filters div.search-key-word {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  padding-left: 10px;
+  border-left: 1px #f16664 solid;
+}
+header.tour-filters div.filter-price p,
+header.tour-filters div.search-key-word p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+header.tour-filters div.filter-price div.MuiInputBase-root,
+header.tour-filters div.search-key-word div.MuiInputBase-root {
+  height: 40px;
+  font-size: 13px;
+  margin-top: 5px;
+  color: #f16664;
+  width: 70px;
+}
+header.tour-filters div.filter-price div.MuiInputBase-root.filled input,
+header.tour-filters div.search-key-word div.MuiInputBase-root.filled input {
+  border-bottom: 2px #f16664 solid;
+  background-color: transparent;
+}
+header.tour-filters div.filter-price div.MuiInputBase-root input,
+header.tour-filters div.search-key-word div.MuiInputBase-root input {
+  padding-bottom: 0;
+  background-color: #ffcecd;
+  border-radius: 5%;
+  border-bottom: 2px transparent solid;
+  margin-top: 8px;
+  padding-left: 5px;
+  transition: 500ms;
+}
+header.tour-filters div.filter-price div.MuiInputBase-root input:hover,
+header.tour-filters div.search-key-word div.MuiInputBase-root input:hover,
+header.tour-filters div.filter-price div.MuiInputBase-root input:focus,
+header.tour-filters div.search-key-word div.MuiInputBase-root input:focus {
+  border-bottom: 2px #f16664 solid;
+  background-color: transparent;
+}
+header.tour-filters div.filter-price svg {
+  font-size: 18px;
+  color: #f16664;
+  margin-top: 21px;
+}
+header.tour-filters div.filter-price svg:nth-child(2) {
+  margin-left: 10px;
+}
+header.tour-filters div.filter-price button {
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 30px;
+  width: 70px;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: 2px transparent solid;
+  color: #f16664;
+  font-size: 13px;
+  transition: 500ms;
+}
+header.tour-filters div.filter-price button:hover {
+  border-bottom: 2px #f16664 solid;
+}
+header.tour-filters div.search-key-word div.MuiInputBase-root {
+  width: 130px;
+}
+header.tour-filters div.search-key-word button {
+  color: #f16664;
+}
+/*# sourceMappingURL=Filters.css.map */

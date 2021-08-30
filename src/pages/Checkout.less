@@ -1,0 +1,94 @@
+@background_transparent: transparent;
+@border_transparent: transparent;
+@border_color_1: #f16664;
+@button_color_1: #f16664;
+@svg_color_1: #f16664;
+@text_color_1: #111;
+
+
+div.tour-order-placed {
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+
+    svg {
+        font-size: 60px;
+        color: @svg_color_1;
+        margin-right: 15px;
+    }
+
+    div.MuiBox-root {
+        h5, h6 {
+            color: #111;
+        }
+    }
+
+}
+
+div.tour-order-placing {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    width: 80%;
+
+    button {
+        margin-top: 15px;
+        width: 110px;
+        font-size: 12px;
+        padding: 5px;
+        border: 2px @border_color_1 solid;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: @background_transparent;
+        color: @button_color_1;
+
+        &:disabled {
+            border: 2px @border_transparent solid;
+        }
+    }
+}
+
+.Checkout {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.Checkout-header,
+.Checkout-summary {
+  flex: 100%;
+}
+
+.Checkout-form {
+  flex: 100%;
+  display: flex;
+}
+
+.Checkout-actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.Checkout-package-remove {
+  border-width: 0;
+  background-color: transparent;
+  color: #333;
+  font-size: 16pt;
+}
+
+.Checkout-actions__next button {
+  border: 1px solid #aaa;
+  background-color: #79cccd;
+  color: #111;
+  padding: 2rem;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.Checkout-actions__next button:hover {
+  border-color: #333;
+  background-color: #555;
+  color: #eee;
+}

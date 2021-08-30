@@ -1,0 +1,75 @@
+div.tour-item h3 {
+  font-size: 18pt;
+}
+div.tour-item h3 a,
+div.tour-item h3 a:visited,
+div.tour-item h3 a:active {
+  text-decoration: none;
+  font-weight: normal;
+  color: #111;
+}
+div.tour-item div.MuiAvatar-circular {
+  background-color: #f16664;
+}
+div.tour-item div.MuiCardHeader-content span.MuiCardHeader-title {
+  color: #111;
+  font-weight: 500;
+  font-size: 15px;
+}
+div.tour-item div.MuiCardHeader-content span.MuiCardHeader-subheader {
+  color: #111;
+  font-weight: 500;
+  font-size: 11px;
+  margin-left: 10px;
+}
+div.tour-item div.MuiCardContent-root span.tour-rating-handler {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div.tour-item div.MuiCardContent-root span.tour-rating-handler p {
+  color: #111;
+  font-size: 14px;
+  margin-right: 10px;
+}
+div.tour-item div.MuiCardContent-root span.tour-rating-handler span.tour-rating.Item-rating__easy svg:nth-child(1),
+div.tour-item div.MuiCardContent-root span.tour-rating-handler span.tour-rating.Item-rating__medium svg:nth-child(1),
+div.tour-item div.MuiCardContent-root span.tour-rating-handler span.tour-rating.Item-rating__hard svg:nth-child(1) {
+  color: #007d8c;
+}
+div.tour-item div.MuiCardContent-root span.tour-rating-handler span.tour-rating.Item-rating__medium svg:nth-child(2),
+div.tour-item div.MuiCardContent-root span.tour-rating-handler span.tour-rating.Item-rating__hard svg:nth-child(2) {
+  color: #007d8c;
+}
+div.tour-item div.MuiCardContent-root span.tour-rating-handler span.tour-rating.Item-rating__hard svg:nth-child(3) {
+  color: #007d8c;
+}
+div.tour-item div.MuiCardContent-root span.tour-rating-handler span.tour-rating svg {
+  color: #aaa;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+div.tour-item div.MuiCardContent-root p {
+  color: #111;
+  font-size: 12px;
+}
+div.tour-item div.MuiCardActions-root {
+  display: flex;
+  justify-content: space-between;
+}
+div.tour-item div.MuiCardActions-root p {
+  color: #111;
+  font-size: 13px;
+  margin-top: 3px;
+}
+div.tour-item div.MuiCardActions-root a {
+  text-decoration: none;
+  color: #111;
+  margin-bottom: 5px;
+  border-bottom: 2px transparent solid;
+  transition: 500ms;
+}
+div.tour-item div.MuiCardActions-root a:hover {
+  border-bottom: 2px #f16664 solid;
+}
+/*# sourceMappingURL=Item.css.map */

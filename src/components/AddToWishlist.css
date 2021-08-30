@@ -1,0 +1,10 @@
+button.AddToWishlist {
+  background-color: transparent;
+  border: 0;
+}
+button.AddToWishlist svg {
+  width: 24px;
+  height: 24px;
+  color: #f16664;
+}
+/*# sourceMappingURL=AddToWishlist.css.map */

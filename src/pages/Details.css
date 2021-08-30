@@ -1,0 +1,79 @@
+div.tour-package-details {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  margin-left: 10px;
+}
+div.tour-package-details div.tour-no-details {
+  display: flex;
+}
+div.tour-package-details div.tour-no-details svg {
+  font-size: 50px;
+  color: #f16664;
+  margin-right: 15px;
+}
+div.tour-package-details div.tour-no-details p {
+  font-size: 18px;
+  color: #111;
+  margin-top: 11px;
+}
+div.tour-package-details div.tour-with-details div.tour-with-details-header-1 {
+  display: flex;
+  justify-content: space-between;
+}
+div.tour-package-details div.tour-with-details div.tour-with-details-header-1 div.tour-with-details-header-2 {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+div.tour-package-details div.tour-with-details div.tour-with-details-header-1 div.tour-with-details-header-2 p {
+  color: #111;
+  margin-left: 5px;
+  font-size: 15px;
+}
+div.tour-package-details div.tour-with-details div.tour-with-details-body {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  padding-right: 80px;
+}
+div.tour-package-details div.tour-with-details div.tour-with-details-body div.tour-with-details-body-1 {
+  width: 70%;
+}
+div.tour-package-details div.tour-with-details div.tour-with-details-body div.tour-with-details-body-1 p {
+  color: #111;
+  font-size: 14px;
+  margin-right: 70%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+div.tour-package-details div.tour-with-details div.tour-with-details-body div.tour-with-details-body-1 p.newline {
+  flex-direction: column;
+  margin-right: 0;
+}
+div.tour-package-details div.tour-with-details div.tour-with-details-body div.tour-with-details-body-1 p span {
+  font-weight: 600;
+}
+div.tour-package-details div.tour-with-details div.tour-with-details-body div.tour-with-details-body-image {
+  height: 200px;
+  width: 30%;
+}
+div.tour-package-details div.tour-with-details div.tour-with-details-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+  margin-right: 100px;
+}
+div.tour-package-details div.tour-with-details div.tour-with-details-footer button {
+  height: 50px;
+  width: 110px;
+  font-size: 12px;
+  padding: 5px;
+  border: 2px #f16664 solid;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #f16664;
+  color: white;
+}
+/*# sourceMappingURL=Details.css.map */

@@ -1,0 +1,101 @@
+@background_color_1: #f16664;
+@border_color_1: #f16664;
+@button_color_1: white;
+@svg_color_1: #f16664;
+@text_color_1: #111;
+
+
+div.tour-package-details {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    margin-left: 10px;
+
+    div.tour-no-details {
+        display: flex;
+
+        svg {
+            font-size: 50px;
+            color: @svg_color_1;
+            margin-right: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            color: @text_color_1;
+            margin-top: 11px;
+        }
+    }
+
+    div.tour-with-details {
+        div.tour-with-details-header-1 {
+            display: flex;
+            justify-content: space-between;
+
+            div.tour-with-details-header-2 {
+                display: flex;
+                align-items: center;
+                margin-right: 100px;
+
+                p {
+                    color: @text_color_1;
+                    margin-left: 5px;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        div.tour-with-details-body {
+            display: flex;
+            margin-top: 30px;
+            justify-content: space-between;
+            padding-right: 80px;
+
+            div.tour-with-details-body-1 {
+                width: 70%;
+
+                p {
+                    color: @text_color_1;
+                    font-size: 14px;
+                    margin-right: 70%;
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    &.newline {
+                        flex-direction: column;
+                        margin-right: 0;
+                    }
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            div.tour-with-details-body-image {
+                height: 200px;
+                width: 30%;
+            }
+        }
+
+        div.tour-with-details-footer {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+            margin-right: 100px;
+
+            button {
+                height: 50px;
+                width: 110px;
+                font-size: 12px;
+                padding: 5px;
+                border: 2px @border_color_1 solid;
+                box-shadow: none;
+                border-radius: 0;
+                background-color: @background_color_1;
+                color: @button_color_1;
+            }
+        }
+    }
+}

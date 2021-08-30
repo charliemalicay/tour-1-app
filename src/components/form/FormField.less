@@ -1,0 +1,39 @@
+
+div.tour-checkout-fields {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 0 0;
+
+    p {
+        color: #111;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    div.MuiInputBase-root {
+        input {
+            padding: 8px;
+            background-color: #ffcecd;
+            border-radius: 5%;
+            border-bottom: 2px transparent solid;
+            transition: 500ms;
+            width: 30%;
+            font-size: 14px;
+
+            &:hover, &:focus {
+                border-bottom: 2px #f16664 solid;
+                background-color: transparent;
+            }
+        }
+
+        &.filled input {
+            border-bottom: 2px #f16664 solid;
+            background-color: transparent;
+        }
+    }
+
+    div.error {
+        color: red;
+        font-size: 10pt;
+    }
+}

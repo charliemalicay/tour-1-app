@@ -1,0 +1,33 @@
+div.tour-checkout-fields {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 0 0;
+}
+div.tour-checkout-fields p {
+  color: #111;
+  font-size: 15px;
+  font-weight: 500;
+}
+div.tour-checkout-fields div.MuiInputBase-root input {
+  padding: 8px;
+  background-color: #ffcecd;
+  border-radius: 5%;
+  border-bottom: 2px transparent solid;
+  transition: 500ms;
+  width: 30%;
+  font-size: 14px;
+}
+div.tour-checkout-fields div.MuiInputBase-root input:hover,
+div.tour-checkout-fields div.MuiInputBase-root input:focus {
+  border-bottom: 2px #f16664 solid;
+  background-color: transparent;
+}
+div.tour-checkout-fields div.MuiInputBase-root.filled input {
+  border-bottom: 2px #f16664 solid;
+  background-color: transparent;
+}
+div.tour-checkout-fields div.error {
+  color: red;
+  font-size: 10pt;
+}
+/*# sourceMappingURL=FormField.css.map */
