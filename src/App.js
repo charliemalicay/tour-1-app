@@ -11,6 +11,7 @@ import CartLink from './components/CartLink';
 import Checkout from './pages/Checkout';
 import Details from './pages/Details';
 import List from './pages/List';
+import ServiceApi from './services/ServiceApi';
 
 import './App.css';
 
@@ -30,15 +31,17 @@ const App = () => {
     const toggleWishlist = (itemId) => {
         let toggle;
 
-        // if (wishlist.includes(itemId)) {
-        //     toggle = ServiceApi.wishlistDelete(itemId);
-        // } else {
-        //     toggle = ServiceApi.wishlistAdd(itemId);
-        // }
-        //
+        let wishListItemCond = wishlist && wishlist.filter((data) => data.package === itemId).length > 0;
+
+        if (wishListItemCond && wishListItemCond.length > 0) {
+            // toggle = ServiceApi.wishlistDelete(itemId);
+        } else {
+            // toggle = ServiceApi.wishlistAdd(itemId);
+        }
+
         // toggle.then(() => {
         //     ServiceApi.retrieveWishlist().then((data) => {
-        //         setWishlist(data);
+        //         setWishlist(data.result);
         //     })
         // });
     }
@@ -79,11 +82,11 @@ const App = () => {
     }
 
     useEffect(() => {
-        // if (wishlist && wishlist.length === 0) {
-        //     ServiceApi.retrieveWishlist().then((data) => {
-        //         setWishlist(data);
-        //     });
-        // }
+        if (wishlist && wishlist.length === 0) {
+            ServiceApi.retrieveWishlist().then((data) => {
+                setWishlist(data.results);
+            });
+        }
     }, [wishlist]);
 
     return (

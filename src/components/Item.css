@@ -27,6 +27,10 @@ div.tour-item div.MuiCardHeader-content span.MuiCardHeader-subheader {
   font-size: 11px;
   margin-left: 10px;
 }
+div.tour-item div.MuiCardMedia-root {
+  height: 100px;
+  width: 60%;
+}
 div.tour-item div.MuiCardContent-root span.tour-rating-handler {
   display: flex;
   flex-direction: row;

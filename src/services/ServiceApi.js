@@ -1,27 +1,25 @@
 import Axios from 'axios';
 
-const dotenv = require('dotenv');
-
 const default_host = process.env.REACT_APP_BACKEND_URL;
 
 
 export default {
     async retrieveWishlist() {
         return new Promise((resolve) => {
-            Axios.get(default_host + '/api/v1/wishlist/').then((response) => {
+            Axios.get(default_host + '/api/v1/wishlist-item/').then((response) => {
                 resolve(response.data);
             });
         });
     },
 
     async wishlistAdd(id) {
-        const data = { id };
+        const data = { package: id, session_id: "wishlist-item" };
 
-        return Axios.post( default_host + '/api/v1/wishlist/', data);
+        return Axios.post( default_host + '/api/v1/wishlist-item/', data);
     },
 
     async wishlistDelete(itemId) {
-        return Axios.delete(default_host + `/api/v1/wishlist/${itemId}/`);
+        return Axios.delete(default_host + `/api/v1/wishlist-item/${itemId}/`);
     },
 
     async wishlistCartStatus(id, added_to_cart) {

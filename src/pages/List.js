@@ -41,7 +41,6 @@ const List = () => {
 
         ServiceApi.retrieveList(paramsString).then((data) => {
             const { results, count } = data;
-
             setList(results);
             setTotalItems(count);
         });

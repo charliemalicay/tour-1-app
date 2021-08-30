@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaMountain } from 'react-icons/fa';
 
@@ -33,12 +33,8 @@ const Item = ({ wishlist, toggleWishlist, item, route }) => {
                 subheader={`${item.price} USD`}
             />
 
-            <CardActionArea>
-                <Link to={route}>
-                    <CardMedia component="img" image={item.thumbnail_url} title={item.name} alt={item.name}
-                               height="120"/>
-                </Link>
-            </CardActionArea>
+            <CardMedia image={item.thumbnail_url} title={item.name} alt={item.name}
+                       height="120"/>
 
             <CardContent>
                 <span className="tour-rating-handler">

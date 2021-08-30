@@ -5,14 +5,17 @@ import './AddToWishlist.css';
 import { AppContext } from '../AppContext';
 
 
-export default function AddToWishlist(props) {
-    const { itemId } = props;
-
+export default function AddToWishlist({ itemId }) {
     return (
         <AppContext.Consumer>
             {context => {
+                const wishListItemCond = context.wishlist &&
+                    context.wishlist.filter((data) => data.package === itemId).length > 0;
+
+                // console.log("wishListItemCond: ", wishListItemCond);
+
                 return (<button className="AddToWishlist" onClick={() => context.toggleWishlist(itemId)}>
-                    {context.wishlist.includes(itemId) ? <FaHeart /> : <FaRegHeart />}
+                    { wishListItemCond ? <FaHeart /> : <FaRegHeart /> }
                 </button>);
             }}
         </AppContext.Consumer>

@@ -25,8 +25,6 @@ const Details = ({ match, history }) => {
 
     useEffect(() => {
         ServiceApi.retrieveDetails(id).then((details) => {
-            console.log("details: ", details);
-
             setDetails(details);
             setAlreadyAddedToCart(item && item.id === id);
         });
