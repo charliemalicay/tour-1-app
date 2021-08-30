@@ -1,0 +1,116 @@
+@color_coral: #f16664;
+@color_off_white: #fff6e6;
+@color_teal: #79cccd;
+@color_dark_teal: #6bb7b9;
+@color_darker_teal: #007d8c;
+
+
+div.tour-container {
+    margin-top: 15px;
+
+    p.MuiTypography-root,
+    h5.MuiTypography-root,
+    span.MuiTypography-root {
+        color: #f16664;
+    }
+
+    div.tour-main-icon {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            text-decoration: none;
+        }
+
+        span {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 65%;
+            height: 100px;
+            border-bottom: transparent 2px solid;
+            transition: 300ms;
+            margin-left: 15%;
+
+            &:hover {
+                border-bottom: #f16664 2px solid;
+            }
+
+            svg {
+                font-size: 70px;
+                color: #f16664;
+            }
+
+            p {
+                margin-top: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    div.tour-other-options {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 70px;
+
+        button, a {
+            background-color: transparent;
+            color: #f16664;
+            padding: 1rem;
+            text-decoration: none;
+            font-size: 1rem;
+            text-align: center;
+            border: none;
+            border-bottom: transparent 2px solid;
+            transition: 300ms;
+
+            &:hover {
+                cursor: pointer;
+                border-bottom: #f16664 2px solid;
+            }
+        }
+    }
+
+    div.tour-side-bar {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin-left: 13%;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-left: #f16664 2px solid;
+
+        &.side-text {
+            color: #505050;
+
+            &:first-child {
+                font-size: 25px;
+                font-weight: 550;
+                text-decoration: underline;
+                margin-bottom: 10px;
+            }
+
+            &:nth-child(2) {
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+
+            &:nth-child(3) {
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    div.tour-body-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

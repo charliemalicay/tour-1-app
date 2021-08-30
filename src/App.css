@@ -1,38 +1,96 @@
-.App {
+div.tour-container {
+  margin-top: 15px;
+}
+div.tour-container p.MuiTypography-root,
+div.tour-container h5.MuiTypography-root,
+div.tour-container span.MuiTypography-root {
+  color: #f16664;
+}
+div.tour-container div.tour-main-icon {
+  display: flex;
+  flex-direction: column;
+}
+div.tour-container div.tour-main-icon a {
+  text-decoration: none;
+}
+div.tour-container div.tour-main-icon span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 100px;
+  border-bottom: transparent 2px solid;
+  transition: 300ms;
+  margin-left: 15%;
+}
+div.tour-container div.tour-main-icon span:hover {
+  border-bottom: #f16664 2px solid;
+}
+div.tour-container div.tour-main-icon span svg {
+  font-size: 70px;
+  color: #f16664;
+}
+div.tour-container div.tour-main-icon span p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+div.tour-container div.tour-other-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 70px;
+}
+div.tour-container div.tour-other-options button,
+div.tour-container div.tour-other-options a {
+  background-color: transparent;
+  color: #f16664;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
   text-align: center;
+  border: none;
+  border-bottom: transparent 2px solid;
+  transition: 300ms;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.tour-container div.tour-other-options button:hover,
+div.tour-container div.tour-other-options a:hover {
+  cursor: pointer;
+  border-bottom: #f16664 2px solid;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.tour-container div.tour-side-bar {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin-left: 13%;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-left: #f16664 2px solid;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div.tour-container div.tour-side-bar.side-text {
+  color: #505050;
+}
+div.tour-container div.tour-side-bar.side-text:first-child {
+  font-size: 25px;
+  font-weight: 550;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+div.tour-container div.tour-side-bar.side-text:nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+div.tour-container div.tour-side-bar.side-text:nth-child(3) {
+  font-size: 15px;
+  font-weight: 500;
+}
+div.tour-container div.tour-body-display {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */
