@@ -14,6 +14,7 @@ import List from './pages/List';
 
 import './App.css';
 
+require('dotenv').config();
 
 
 const App = () => {

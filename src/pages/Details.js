@@ -5,7 +5,7 @@ import { AssignmentLate } from "@material-ui/icons";
 
 import { AppContext } from '../AppContext';
 import AddToWishlist from '../components/AddToWishlist';
-// import ServiceApi from '../services/ServiceApi';
+import ServiceApi from '../services/ServiceApi';
 
 import './Details.css';
 
@@ -24,10 +24,12 @@ const Details = ({ match, history }) => {
     }
 
     useEffect(() => {
-        // ServiceApi.retrieveDetails(id).then((details) => {
-        //     setDetails(details);
-        //     setAlreadyAddedToCart(item && item.id === id);
-        // });
+        ServiceApi.retrieveDetails(id).then((details) => {
+            console.log("details: ", details);
+
+            setDetails(details);
+            setAlreadyAddedToCart(item && item.id === id);
+        });
     }, []);
 
     return (

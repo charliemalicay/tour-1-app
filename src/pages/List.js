@@ -8,7 +8,7 @@ import { AppContext } from '../AppContext';
 import Item from '../components/Item';
 import Pagination from '../components/Pagination';
 import Filters from '../components/Filters';
-// import ServiceApi from '../services/ServiceApi';
+import ServiceApi from '../services/ServiceApi';
 
 
 const List = () => {
@@ -24,7 +24,12 @@ const List = () => {
     const { wishlist, toggleWishlist } = useContext(AppContext);
 
     const updateList = () => {
-        const queryParams = {};
+        const queryParams = {
+            price_min: 0,
+            price_max: 0,
+            search: "",
+            page: pageIndex
+        };
 
         if (filters.price_min) queryParams.price_min = filters.price_min;
 
@@ -32,11 +37,14 @@ const List = () => {
 
         if (filters.search && filters.search.length > 0) queryParams.search = filters.search;
 
-        // ServiceApi.retrieveList(pageIndex, queryParams).then((data) => {
-        //     const { results, count } = data;
-        //     setList(results);
-        //     setTotalItems(count);
-        // });
+        const paramsString = `?price_min=${queryParams.price_min}&price_max=${queryParams.price_max}&search=${queryParams.search}&page=${queryParams.page}`;
+
+        ServiceApi.retrieveList(paramsString).then((data) => {
+            const { results, count } = data;
+
+            setList(results);
+            setTotalItems(count);
+        });
     }
 
     const updateFilters = (inpFilters) => {
@@ -65,7 +73,7 @@ const List = () => {
         <Container maxWidth={ false } className="tour-list-package">
             <Filters onFilterUpdate={(inpFilters) => updateFilters(inpFilters)} />
 
-            <Box>
+            <Box className="items-handler">
                 { list.map(item => {
                     return (
                         <Item key={item.id} route={`/details/${item.id}`} item={item} wishlist={wishlist}
